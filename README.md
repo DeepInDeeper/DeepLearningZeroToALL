@@ -10,7 +10,7 @@
 3.for making sure your project can run in every mechine,it is beter to write requirement.txt to tell others some requirements   
 
 
-#######
+######
 I hope every guy can share your project and notes about DL, and then all of us can quickly learn more about DL...  
 In the end,enjot it !!!  
 
