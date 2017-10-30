@@ -15,8 +15,8 @@ train_dir = 'train'
 test_dir = 'test'
 batch_size = 128
 data_dir = '/media/yijie/娱乐/tmp/kaggle_cifar10'
-label_file = '/media/yijie/娱乐/tmp/kaggle_cifar10/test/trainLabels.csv'
-input_dir = '/media/yijie/娱乐/tmp/train_valid_test'
+label_file = '/media/yijie/文档/dataset/gluon/trainLabels.csv'
+input_dir = '/media/yijie/文档/dataset/gluon/train_valid_test'
 valid_ratio = 0.1
 pre_deal_flag = True
 
