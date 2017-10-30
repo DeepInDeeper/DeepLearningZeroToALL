@@ -92,7 +92,7 @@ def train(net, train_data, valid_data, num_epochs, lr, wd, ctx, lr_period, lr_de
 
 
 ctx = utils.try_gpu()
-num_epochs = 10
+num_epochs = 100
 learning_rate = 0.1
 weight_decay = 5e-4
 lr_period = 80
