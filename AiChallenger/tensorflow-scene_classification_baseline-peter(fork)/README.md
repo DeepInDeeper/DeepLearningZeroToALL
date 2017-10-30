@@ -1,5 +1,5 @@
-official baseline....
-fork from [AIchallenger.ai](https://github.com/AIChallenger/AI_Challenger/tree/master/Baselines/scene_classification_baseline)
+Official baseline....  
+Fork from [AIchallenger.ai](https://github.com/AIChallenger/AI_Challenger/tree/master/Baselines/scene_classification_baseline)
 # AI_Challenger
 challenger.ai     
 Scene classification baseline for AI_Challenger dataset.
