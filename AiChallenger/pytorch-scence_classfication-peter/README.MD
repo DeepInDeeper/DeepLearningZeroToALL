@@ -1,6 +1,13 @@
 >
 fork : [chenyuntc](https://github.com/chenyuntc/scene-baseline)
 thanks!
+### By the way:
+国内 
+	pip install visdom
+	python -m visdom.server
+会出现一些文件下载不下来（GFC原因.....），主要是 python下的visdom文件里 static文件丢失。
+参考链接[issues185](https://github.com/facebookresearch/visdom/issues/185)下载文件到static下面
+
 
 # PyTorch Baseline for AI challenger scene
 AI Challenger [场景分类竞赛](https://challenger.ai/competition/scene/)的示例代码
