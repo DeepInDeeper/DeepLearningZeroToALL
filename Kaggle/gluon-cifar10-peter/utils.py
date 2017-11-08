@@ -6,6 +6,7 @@ from mxnet.gluon import nn
 import mxnet as mx
 import numpy as np
 
+
 class DataLoader(object):
     """similiar to gluon.data.DataLoader, but faster"""
     def __init__(self, X, y, batch_size, shuffle):

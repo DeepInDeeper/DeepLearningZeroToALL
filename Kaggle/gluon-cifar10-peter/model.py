@@ -27,7 +27,7 @@ class Residual(nn.HybridBlock):
 
     
 class ResNet(nn.HybridBlock):
-    def __init__(self, num_classes, verbose=False, **kwargs):
+    def __init__(self, num_classes,drop_prob, verbose=False, **kwargs):
         super(ResNet, self).__init__(**kwargs)
         self.verbose = verbose
         with self.name_scope():
@@ -50,6 +50,7 @@ class ResNet(nn.HybridBlock):
             # block 5
             net.add(nn.AvgPool2D(pool_size=8))
             net.add(nn.Flatten())
+            net.add(nn.Dropout(drop_prob))
             net.add(nn.Dense(num_classes))
 
     def hybrid_forward(self, F, x):
@@ -63,6 +64,7 @@ class ResNet(nn.HybridBlock):
 
 def get_net(ctx):
     num_outputs = 10
-    net = ResNet(num_outputs)
+    drop_prob = 0.8
+    net = ResNet(num_outputs,drop_prob)
     net.initialize(ctx=ctx,init=init.Xavier())
     return net
