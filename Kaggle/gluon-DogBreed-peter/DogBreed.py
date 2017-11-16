@@ -10,14 +10,15 @@ from mxnet.gluon.data import vision
 import numpy as np
 from mxnet.gluon import nn
 from matplotlib import pyplot as plt
+import os
 
-pre_deal_flag = True
+pre_deal_flag = False
 data_dir = u"/media/yijie/文档/dataset/ImageNetDog"
 label_file = 'labels.csv'
 train_dir = 'train'
 test_dir = 'test'
 input_dir = 'train_valid_test'
-batch_size = 80
+batch_size = 32
 valid_ratio = 0.1
 
 
