@@ -10,7 +10,7 @@ from mxnet.gluon.data import vision
 import numpy as np
 from mxnet.gluon import nn
 from matplotlib import pyplot as plt
-
+from utils import Visualizer
 
 train_dir = 'train'
 test_dir = 'test'
@@ -20,6 +20,8 @@ label_file = 'D:/dataset/gluon/train_valid_test/trainLabels.csv'
 input_dir = 'D:/dataset/gluon/train_valid_test'
 valid_ratio = 0.1
 pre_deal_flag = True
+
+vis = Visualizer(env='CIFAR10')
 
 # sorting the dataset and transform
 if not pre_deal_flag:
