@@ -1,37 +1,23 @@
 #coding:utf8
-from __future__ import print_function
-from __future__ import division
-import numpy as np 
-import pandas as pd 
 
-import numpy as np
-import random
-from datetime import datetime
-from sklearn.utils import shuffle
-
-import torch
+# sys 
 import sys
 import torch
 from torch.utils.data.dataset import Dataset
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from torch import nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torch.autograd import Variable
 from torch.utils.data import TensorDataset, DataLoader
-
-import torch
-import torch.nn as nn
+import random
+import numpy as np
+import pandas as pd 
+from sklearn.utils import shuffle
+from sklearn.model_selection import train_test_split
 import torch.nn.functional as F
-import torch.optim as optim
 from torchvision import datasets, transforms
-from torch.autograd import Variable
 
+# user
 from models import XnumpyToTensor,YnumpyToTensor
 
 use_cuda = torch.cuda.is_available()
-BASE_FOLDER = u'/media/yijie/文档/dataset/kaggle_Iceberg'
+#BASE_FOLDER = u'/media/yijie/文档/dataset/kaggle_Iceberg'
 
 def fixSeed(seed):
     random.seed(seed)
@@ -136,7 +122,7 @@ class FullTrainningDataset(torch.utils.data.Dataset):
     def __getitem__(self, i):
         return self.full_ds[i + self.offset]
 
-def trainTestSplit(dataset, val_share=0.11):
+def trainTestSplit(dataset, val_share):
     val_offset = int(len(dataset) * (1 - val_share))
     # print("Offest:" + str(val_offset))
     return FullTrainningDataset(dataset, 0, val_offset), FullTrainningDataset(dataset,val_offset, len(dataset) - val_offset)
@@ -144,9 +130,7 @@ def trainTestSplit(dataset, val_share=0.11):
 
 
 
-
-# def readSuffleData(seed=datetime.now()):
-def readSuffleData(seed_num):
+def readSuffleData(seed_num,BASE_FOLDER):
     fixSeed(seed_num)
     local_data = pd.read_json(BASE_FOLDER + '/train.json')
 
@@ -164,18 +148,18 @@ def readSuffleData(seed_num):
 
 
 
-def getTrainValLoaders(data,full_img,batch_size,num_workers):
+def getTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio):
     # global train_ds, val_ds, train_loader, val_loader
     train_imgs = XnumpyToTensor(full_img)
     train_targets = YnumpyToTensor(data['is_iceberg'].values)
     dset_train = TensorDataset(train_imgs, train_targets)
-    local_train_ds, local_val_ds = trainTestSplit(dset_train)
+    local_train_ds, local_val_ds = trainTestSplit(dset_train,validationRatio)
     local_train_loader = torch.utils.data.DataLoader(local_train_ds, batch_size=batch_size, shuffle=False, num_workers=num_workers)
     local_val_loader = torch.utils.data.DataLoader(local_val_ds, batch_size=batch_size, shuffle=False, num_workers=num_workers)
     return local_train_loader, local_val_loader, local_train_ds, local_val_ds
 
 
-def getCustomTrainValLoaders():
+def getCustomTrainValLoaders(data,full_img,batch_size,num_workers):
     # global train_ds, train_loader, val_loader
     from random import randrange
     X_train, X_val, y_train, y_val = train_test_split(full_img, data['is_iceberg'].values,

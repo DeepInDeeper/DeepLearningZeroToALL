@@ -1,32 +1,22 @@
 #coding:utf-8
+# sys
+import torch
+import pandas as pd 
 import numpy as np
-import torch
 import sys
-import torch
-from torch.utils.data.dataset import Dataset
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from torch import nn
-import torch.nn.functional as F
-import torch.optim as optim
 from torch.autograd import Variable
-from torch.utils.data import TensorDataset, DataLoader
-
-import torch
+import tqdm
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torchvision import datasets, transforms
-from torch.autograd import Variable
-import pandas as pd 
-import tqdm
 
-global_epoches = 55
-LR = 0.0005
+#user
+
+
 use_cuda = torch.cuda.is_available()
 BASE_FOLDER = '/media/yijie/文档/dataset/kaggle_Iceberg'
 
-def generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,num_epoches=global_epoches):
+def generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,LR,num_epoches):
     use_cuda = torch.cuda.is_available()
     loss_func = torch.nn.BCELoss()  # Binary cross entropy: http://pytorch.org/docs/nn.html#bceloss
 

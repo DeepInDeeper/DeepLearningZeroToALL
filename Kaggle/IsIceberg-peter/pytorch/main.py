@@ -10,10 +10,10 @@ import torch
 from utils import opt
 import models
 from models import diff_net as net
-from Iceberg_dataset import readSuffleData,getTrainValLoaders,fixSeed
+from Iceberg_dataset import readSuffleData,getTrainValLoaders,getCustomTrainValLoaders,fixSeed
 from iceberg_classfier import generateSingleModel,testModel
 
-batch_size =128
+
 use_cuda = torch.cuda.is_available()
 if use_cuda:
     num_workers = 0 # for windows version of PyTorch which does not share GPU tensors
@@ -30,15 +30,17 @@ def savePred(df_pred, val_score):
 def train(**kwargs):
 	# train model
 	opt.parse(kwargs)
+	batch_size,validationRatio = opt.batch_size,opt.validationRatio
+	
 	fixSeed(opt.global_seed)
 	for i in range(10):
-		print i
+		print ("Ensamble number:" + str(i))
 		model = models.SimpleNet()
-		# model = ResNetLike(BasicBlock, [1, 3, 3, 1], num_channels=2, num_classes=1)
-		data, full_img = readSuffleData(seed_num=opt.global_seed)
-		train_loader, val_loader, train_ds, val_ds = getTrainValLoaders(data,full_img,batch_size,num_workers)
-		# train_loader, val_loader, train_ds, val_ds = getCustomTrainValLoaders()
-		model, val_result= generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,num_epoches=55)
+		#model = models.ResNetLike(BasicBlock, [1, 3, 3, 1], num_channels=2, num_classes=1)
+		data, full_img = readSuffleData(opt.global_seed,opt.BASE_FOLDER)
+		train_loader, val_loader, train_ds, val_ds = getTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio)
+		#train_loader, val_loader, train_ds, val_ds = getCustomTrainValLoaders(data,full_img,batch_size,num_workers)
+		model, val_result= generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,opt.LR,opt.global_epoches)
 
 		#print (model)
 	df_pred = testModel(model)
