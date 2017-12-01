@@ -12,7 +12,8 @@ from mxnet.gluon import nn
 from matplotlib import pyplot as plt
 import os
 
-pre_deal_flag = False
+
+pre_deal_flag = True
 data_dir = u"/media/yijie/文档/dataset/ImageNetDog"
 label_file = 'labels.csv'
 train_dir = 'train'

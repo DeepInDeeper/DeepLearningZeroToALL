@@ -2,10 +2,10 @@
 import pandas as pd
 import numpy as np
 
-order = pd.read_csv(r'F:/dataset/Sales_Forecast_Qualification/t_order.csv')
+order = pd.read_csv(r'/media/yijie/文档/dataset/Sales_Forecast_Qualification/t_order.csv')
 order = order[order.sale_amt >= 0]
 order['datetime'] = pd.to_datetime(order['ord_dt'])
-sale = order.groupby('shop_id').resample('1M', on='datetime').sum()
+sale = order.groupby('shop_id').resample('1M', key='datetime').sum()
 del sale['shop_id']
 sale = sale.reset_index()
 sale['month'] = sale['datetime'].map(lambda x: x.month)
