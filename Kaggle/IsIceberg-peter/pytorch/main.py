@@ -31,9 +31,9 @@ def train(**kwargs):
 	# train model
 	opt.parse(kwargs)
 	batch_size,validationRatio = opt.batch_size,opt.validationRatio
-	
+
 	fixSeed(opt.global_seed)
-	for i in range(10):
+	for i in range(60):
 		print ("Ensamble number:" + str(i))
 		model = models.SimpleNet()
 		#model = models.ResNetLike(BasicBlock, [1, 3, 3, 1], num_channels=2, num_classes=1)

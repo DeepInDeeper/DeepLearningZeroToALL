@@ -13,7 +13,7 @@ class Config:
     global_seed=999
     env = 'scene'  # visdom env
     plot_every = 10 # 每10步可视化一次
-    workers = 4 # CPU多线程加载数据
+    workers = 4 # 多线程加载数据
     model = "SimpleNet"
     result_path='submit.csv' #提交文件保存路径
 

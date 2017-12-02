@@ -16,8 +16,8 @@ from torchvision import datasets, transforms
 # user
 from models import XnumpyToTensor,YnumpyToTensor
 
+
 use_cuda = torch.cuda.is_available()
-#BASE_FOLDER = u'/media/yijie/文档/dataset/kaggle_Iceberg'
 
 def fixSeed(seed):
     random.seed(seed)
