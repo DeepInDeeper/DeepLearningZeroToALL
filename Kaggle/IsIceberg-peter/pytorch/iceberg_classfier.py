@@ -85,9 +85,10 @@ def generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,LR,num_
     print('TRAIN Loss: {:.6f}'.format(running_loss / (len(train_ds))))
     print('VALIDATION Loss: {:.6f}'.format(eval_loss / (len(val_ds))))
     val_result = '{:.6f}'.format(eval_loss / (len(val_ds)))
+    train_result = '{:.6f}'.format(running_loss / (len(train_ds)))
     # torch.save(model.state_dict(), './pth/' + val_result + '_cnn.pth')
 
-    return model, val_result
+    return model, val_result,train_result
 
 
 def testModel(model):
