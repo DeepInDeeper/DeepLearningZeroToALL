@@ -31,12 +31,13 @@ class Config:
     BASE_FOLDER = u'/media/yijie/文档/dataset/kaggle_Iceberg'
     batch_size = 128
     global_epoches = 55
+    epoch = 10
     validationRatio = 0.11
     period = 20
     num_workers = 4
     LR = 0.0005
     MOMENTUM = 0.95
-    global_seed=999
+    global_seed=998
     env = 'Iceberg'  # visdom env
     workers = 4 # 多线程加载数据
     model = "SimpleNet"
