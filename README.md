@@ -2,6 +2,7 @@
 1.DL projects for some competitions(such as,ImageNet,Kaggle,AI challenger...)  
 2.Make some notes about ML,DL  
 3.Try to use diffrent frames (tensorflow，mxnet，pytorch)  
+4. Add note to record some interview skills
 
 ## notes:
 > 
