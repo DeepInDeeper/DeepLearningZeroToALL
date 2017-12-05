@@ -31,6 +31,7 @@ class Config:
     BASE_FOLDER = u'/media/yijie/文档/dataset/kaggle_Iceberg'
     batch_size = 128
     global_epoches = 55
+    epoch = 10
     validationRatio = 0.11
     period = 20
     num_workers = 4

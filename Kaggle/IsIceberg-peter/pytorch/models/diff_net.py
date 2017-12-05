@@ -3,7 +3,7 @@ import torch
 from torch import nn
 import torchvision as tv
 
-dropout = torch.nn.Dropout(p=0.50)
+dropout = torch.nn.Dropout(p=0.8)
 relu = torch.nn.LeakyReLU()
 pool = nn.MaxPool2d(2, 2)
 
@@ -74,7 +74,7 @@ class SimpleNet(nn.Module):
 
 
 class ResNetLike(nn.Module):
-    def __init__(self, block, layers=2, num_channels=2, num_classes=1):
+    def __init__(self, block, layers, num_channels=2, num_classes=1):
         self.inplanes = 32
         super(ResNetLike, self).__init__()
         self.conv1 = nn.Conv2d(num_channels, 32, kernel_size=7, stride=2, padding=3,

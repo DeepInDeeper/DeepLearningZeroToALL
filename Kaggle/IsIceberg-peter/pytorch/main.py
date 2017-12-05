@@ -36,21 +36,34 @@ def train(**kwargs):
 	opt.parse(kwargs)
 	
 	batch_size,validationRatio = opt.batch_size,opt.validationRatio
+<<<<<<< HEAD
 	LR = opt.LR
 	vis.vis.env = opt.env
 
 
+=======
+	LR,epoch = opt.LR,opt.epoch
+
+	vis.vis.env = opt.env
+>>>>>>> 81b1ce0bb0f4c84cdcd12102c39188685fb743bc
 	fixSeed(opt.global_seed)
-	for i in range(60):
+
+	min_loss = 10
+
+	model = models.SimpleNet()
+	for i in range(epoch):
 		print ("Ensamble number:" + str(i))
-		model = models.SimpleNet()
 		#model = models.ResNetLike(BasicBlock, [1, 3, 3, 1], num_channels=2, num_classes=1)
 		data, full_img = readSuffleData(opt.global_seed,opt.BASE_FOLDER)
 		train_loader, val_loader, train_ds, val_ds = getTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio)
 		#train_loader, val_loader, train_ds, val_ds = getCustomTrainValLoaders(data,full_img,batch_size,num_workers)			
-		if epoch > lr_period and epoch % 10 == 0:
-			LR = LR * 0.5
+		
 		model, val_result,train_result= generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,LR,opt.global_epoches)	
+		if min_loss<val_result:
+			LR = LR * 0.5
+		else:
+			min_loss = val_result
+		
 		vis.plot('val_loss', val_result)
 		vis.plot("train_loss",train_result)
 		#print (model)
