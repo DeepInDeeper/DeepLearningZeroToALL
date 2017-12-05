@@ -4,8 +4,6 @@
 
 * AlexNet
 
-
-
 * Inceptions
 * VGG16
 
