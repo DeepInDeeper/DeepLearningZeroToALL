@@ -34,10 +34,22 @@ def savePred(df_pred, val_score):
 def train(**kwargs):
 	# train model
 	opt.parse(kwargs)
+	
 	batch_size,validationRatio = opt.batch_size,opt.validationRatio
+<<<<<<< HEAD
 	LR,epoch,global_seed = opt.LR,opt.epoch,opt.global_seed
+=======
+<<<<<<< HEAD
+	LR = opt.LR
+	vis.vis.env = opt.env
+
+
+=======
+	LR,epoch = opt.LR,opt.epoch
+>>>>>>> 6dcad681df4ec76c1fde7449561f49d1c618e8ab
 
 	vis.vis.env = opt.env
+>>>>>>> 81b1ce0bb0f4c84cdcd12102c39188685fb743bc
 	fixSeed(opt.global_seed)
 
 	min_loss = 10
