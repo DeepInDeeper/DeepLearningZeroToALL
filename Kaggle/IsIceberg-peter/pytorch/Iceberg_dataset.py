@@ -159,7 +159,7 @@ def getTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio):
     return local_train_loader, local_val_loader, local_train_ds, local_val_ds
 
 
-def getCustomTrainValLoaders(data,full_img,batch_size,num_workers):
+def getCustomTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio,global_seed):
     # global train_ds, train_loader, val_loader
     from random import randrange
     X_train, X_val, y_train, y_val = train_test_split(full_img, data['is_iceberg'].values,
@@ -171,14 +171,14 @@ def getCustomTrainValLoaders(data,full_img,batch_size,num_workers):
                                             RandomHorizontalFlip(),
                                             RandomVerticallFlip(),
                                             ToTensor(),
-                                            # Normalize(mean = [0.456],std =[0.229]),
+                                            #Normalize(mean = [0.456],std =[0.229]),
                                         ]))
     local_val_ds = IcebergCustomDataSet(X_val, y_val,
                                        transform=transforms.Compose([
-                                           RandomHorizontalFlip(),
-                                           RandomVerticallFlip(),
+                                           #RandomHorizontalFlip(),
+                                           #RandomVerticallFlip(),
                                            ToTensor(),
-                                           # Normalize(mean=[0.456], std=[0.229]),
+                                           #Normalize(mean=[0.456], std=[0.229]),
                                        ]))
     local_train_loader = DataLoader(dataset=local_train_ds, batch_size=batch_size, shuffle=True, num_workers=0)
     local_val_loader = DataLoader(dataset=local_val_ds, batch_size=batch_size, shuffle=True, num_workers=0)

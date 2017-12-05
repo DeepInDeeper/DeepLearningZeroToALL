@@ -1,3 +1,4 @@
+update.....
 # Pytorch Baseline Code（GPU）
 kaggle比赛[Iceberg-classifier-challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge)代码
 
@@ -7,19 +8,19 @@ kaggle比赛[Iceberg-classifier-challenge](https://www.kaggle.com/c/statoil-iceb
 ### 1.环境配置
 安装：
 - [PyTorch](http://pytorch.org/),根据官网说明下载指定的版本即可。
-- 第三方依赖： visdom|sklearn|pandas|numpy
+- 第三方依赖： |fire|visdom|sklearn|pandas|numpy|
 
 
 ### 2.启动visdom
 可视化工具[visdom]用于显示(https://github.com/facebookresearch/visdom)
-    > 国内网站可能在pip的时候有一些会下载不下来，需要自行下载
+    > 国内网站可能在pip的时候有一些会下载不下来，需要自行下载,参考链接[issues185](https://github.com/facebookresearch/visdom/issues/185)下载文件到static下面
 ```bash
 nohup python -m visdom.server&
 ```
 
 ### 3.训练样本并生成提交文件
 
-    python main.py (--model= model = "SimpleNet" --batch_size=256 -epoch=10) 
+    python -B main.py train (--model= model = "SimpleNet" --batch_size=256 -epoch=10) 
 在kaggle提交能够到0.2048
 
 
@@ -30,7 +31,7 @@ nohup python -m visdom.server&
 
 主要内容：
     -- model diff_net.py 存放模型;     
-    -- Iceberg_dataset.py 数据前期处理 readSuffleData、getTrainValLoaders
+    -- Iceberg_dataset.py 数据前期处理 readSuffleData、getCustomTrainValLoaders
     -- iceberg_classfier.py generateSingleModel模型训练、testModel给出预测
 
 ### 其他

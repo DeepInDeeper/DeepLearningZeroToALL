@@ -35,7 +35,7 @@ def train(**kwargs):
 	# train model
 	opt.parse(kwargs)
 	batch_size,validationRatio = opt.batch_size,opt.validationRatio
-	LR,epoch = opt.LR,opt.epoch
+	LR,epoch,global_seed = opt.LR,opt.epoch,opt.global_seed
 
 	vis.vis.env = opt.env
 	fixSeed(opt.global_seed)
@@ -48,13 +48,13 @@ def train(**kwargs):
 		#model = models.ResNetLike(BasicBlock, [1, 3, 3, 1], num_channels=2, num_classes=1)
 		data, full_img = readSuffleData(opt.global_seed,opt.BASE_FOLDER)
 		train_loader, val_loader, train_ds, val_ds = getTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio)
-		#train_loader, val_loader, train_ds, val_ds = getCustomTrainValLoaders(data,full_img,batch_size,num_workers)			
+		#train_loader, val_loader, train_ds, val_ds = getCustomTrainValLoaders(data,full_img,batch_size,num_workers,validationRatio,global_seed)			
 		
 		model, val_result,train_result= generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,LR,opt.global_epoches)	
-		if min_loss<val_result:
-			LR = LR * 0.5
-		else:
-			min_loss = val_result
+		# if min_loss<val_result:
+		# 	LR = LR * 0.5
+		# else:
+		# 	min_loss = val_result
 		
 		vis.plot('val_loss', val_result)
 		vis.plot("train_loss",train_result)
