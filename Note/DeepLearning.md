@@ -4,6 +4,7 @@
 
 * AlexNet
 * Inceptions
+* restnet
 * VGG16
 
 
