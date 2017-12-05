@@ -34,9 +34,12 @@ def savePred(df_pred, val_score):
 def train(**kwargs):
 	# train model
 	opt.parse(kwargs)
+	
 	batch_size,validationRatio = opt.batch_size,opt.validationRatio
-	vis.vis.env = opt.env
 	LR = opt.LR
+	vis.vis.env = opt.env
+
+
 	fixSeed(opt.global_seed)
 	for i in range(60):
 		print ("Ensamble number:" + str(i))

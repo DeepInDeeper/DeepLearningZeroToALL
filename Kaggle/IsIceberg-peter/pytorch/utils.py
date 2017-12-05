@@ -36,7 +36,7 @@ class Config:
     num_workers = 4
     LR = 0.0005
     MOMENTUM = 0.95
-    global_seed=999
+    global_seed=998
     env = 'Iceberg'  # visdom env
     workers = 4 # 多线程加载数据
     model = "SimpleNet"
