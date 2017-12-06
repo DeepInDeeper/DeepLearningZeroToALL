@@ -14,5 +14,8 @@
 ##### 
 
 I hope every guy can share your project and notes about DL, and then all of us can quickly learn more about DL...  
-In the end,enjot it !!!
+In the end,enjot it !!!  
+
+Some Link:    
+[Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 
