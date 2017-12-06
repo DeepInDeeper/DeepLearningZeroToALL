@@ -2,11 +2,14 @@
 
 [Iceberg Classifier Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data)
 
-> using satellite data to build a computer vision based surveillance system
+> using satellite data to build a computer vision based surveillance system   
+
+
+
 
 # Data fields
 
-\[download here\]\(https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data\)
+[download here](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data)
 
 ## train.json, test.json
 
@@ -31,5 +34,4 @@ The data \(`train.json`,`test.json`\) is presented in`json`format. The files con
     `train.json`
     .
 
-![](/img/kaggle_IsIceberg.PNG)
-
+![图片](/img/kaggle_IsIceberg.PNG)
