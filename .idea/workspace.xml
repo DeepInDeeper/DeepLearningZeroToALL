@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc880562-5b1c-4293-8b57-0d69c13add84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kaggle/IsIceberg-peter/readme.md" afterPath="$PROJECT_DIR$/Kaggle/IsIceberg-peter/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Note/DeepLearning.md" afterPath="$PROJECT_DIR$/Note/DeepLearning.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Note/image_processing.md" afterPath="$PROJECT_DIR$/Note/image_processing.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Note/interview_intro.md" afterPath="$PROJECT_DIR$/Note/interview_intro.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Note/paper_read.md" afterPath="$PROJECT_DIR$/Note/paper_read.md" />
-    </list>
+    <list default="true" id="fc880562-5b1c-4293-8b57-0d69c13add84" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +37,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paper_read.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="paper_read.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Note/paper_read.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="270">
                 <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../other/Deep-Learning-Papers-Reading-Roadmap/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Deep_Learning_Papers_Reading_Roadmap.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Note/Deep_Learning_Papers_Reading_Roadmap.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="689">
+                <caret line="312" column="0" lean-forward="true" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -99,6 +119,7 @@
         <option value="$PROJECT_DIR$/Note/DeepLearning.md" />
         <option value="$PROJECT_DIR$/Note/vocabulary.md" />
         <option value="$PROJECT_DIR$/Note/paper_read.md" />
+        <option value="$PROJECT_DIR$/Note/Deep_Learning_Papers_Reading_Roadmap.md" />
       </list>
     </option>
   </component>
@@ -378,17 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Note/DeepLearning.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Note/vocabulary.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -405,6 +415,39 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="270">
             <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note/DeepLearning.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../other/Deep-Learning-Papers-Reading-Roadmap/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note/Deep_Learning_Papers_Reading_Roadmap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="689">
+            <caret line="312" column="0" lean-forward="true" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
