@@ -6,7 +6,7 @@
 
 # Data fields
 
-\[download here\]\(https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data\)
+[download here](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data)
 
 ## train.json, test.json
 
