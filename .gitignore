@@ -8,10 +8,7 @@
 *.xml
 out
 
-
-
 */**/__pycache__
-
 
 */*.pyc
 */**/*.pyc
