@@ -1,4 +1,7 @@
 # 深度学习
+[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/lawlite19/MachineLearning_Python/blob/master/LICENSE)
+
+# 深度学习
 
 1.深度学习一些比赛相关(如，ImageNet,Kaggle,AI challenger...)  
 2.学习笔记
@@ -7,13 +10,13 @@
 
 ## 注意:
 
-> 1.详细描述使用框架、比赛内容，用户（如gloun_cifar10_peter）
-> 2.不必放你自己的数据(创建你自己的一个连接分享就好....)  
-> 3.为更好确保你的工程能够为人所用，写一个 requirement.txt
+> 1.详细描述使用框架、比赛内容，用户（如gloun_cifar10_peter）  
+> 2.不必放你自己的数据(创建你自己的一个连接分享就好)                    
+> 3.为更好确保你的工程能够为人所用，写一个 requirement.txt 
 
 ##### 
 
-希望大家能够积极踊跃参与！
+希望大家能够积极踊跃参与！  
 
 链接内容:    
 [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
