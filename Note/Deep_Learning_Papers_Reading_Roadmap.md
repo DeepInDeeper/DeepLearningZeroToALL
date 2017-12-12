@@ -1,6 +1,9 @@
 更新：  
 ## 2.2 优化      
-**[X]**Ruder S. "**An overview of gradient descent optimization algorithms**"[[pdf]](https://arxiv.org/abs/1609.04747)**(梯度下降优化算法综述，2017，值得看[中文翻译](http://blog.csdn.net/heyongluoyao8/article/details/52478715))** :star::star::star:    
+**[X]**Ruder S. "**An overview of gradient descent optimization algorithms**"
+[[pdf]](https://arxiv.org/abs/1609.04747)**(梯度下降优化算法综述，2017，
+[中文翻译](http://blog.csdn.net/heyongluoyao8/article/details/52478715))
+** :star::star::star:    
   
 深度学习路线图框架  
 1 深度学习历史和基础  

@@ -50,17 +50,57 @@
 
 梯度下降优化算法：
 * Momentum 动量法
+> 动量在参数更新项中加上一次更新量  
+![Momentum](../img/Momentum%20formula.png)
 * NAG 涅斯捷罗夫梯度加速
+> 也是引入动量项，但是在计算参数梯度中，在损失函数中减去了动量项
+![NAG](../img/NAG%20formula.png)
 * Adagrad
+> 该优化算法，能够对每一个参数自适应不同的学习率，适合处理稀疏特征数据。
+对于其他模型，其更新模型参数都使用相同的学习速率，而Adagrad在更新步骤对于每一个模型参数
+使用不同的学习率。
+![Adagrad](../img/Adagrad%20formula.png)
+* Adadelta
+> 是对Adagrad的一个改进，为降低其在学习速率衰减过快问题。主要体现在  
+1 使用窗函数  
+2 参数梯度历史窗口序列(不包括当前)不再使用平方和，而是使用均值代替
+3 最终的均值是历史窗口序列均值与当前梯度的时间衰减加权平均
 * RMSprop
+> 提出也是为了降低Adagrad中学习速率衰减过快问题
+![RMSprop](../img/RMSprop%20formula.png)
 * Adam
+> 一种不同参数自适应不同学习速率方法，与Adadelta与RMSprop区别在于，它计算历史梯度衰减方式不同，不使用历史平方衰减，
+其衰减方式类似动量
+![Adam](../img/Adam%20formula.png)  
+
+各种优化对比:   
+![tif](../img/comp.tif)
+
+Adagrad、Adadelta与RMSprop在损失曲面上能够立即转移到正确的移动方向上达到快速的收敛。而Momentum 与NAG会导致偏离(off-track)
+。同时NAG能够在偏离之后快速修正其路线，因为其根据梯度修正来提高响应性。  
+在选择SGD优化器是，如果特征是稀疏的， 最好选择自适应学习速率SGD（Adagrad、Adadelata、RMSprop
+与Adam），这不需要在迭代过程中对学习速率进行人工调整。目前来看，对于Adam可能是最好的SGD方式。
+
+并行和分布式SGD
+* Hogwild
+* Downpour SGD
+* Delay-tolerant Algorithms for SGD
+* TensorFlow
+* Elastic Averaging SGD   
+
+更多SGD优化  
+* Shuffling and Curriculum Learning
+* Batch normalization
+* Early Stopping
+* Gradient noise
 
 ### x.物体检测  
 
 [2017-COCO2017物体检测夺冠算法](http://cn.arxiv.org/abs/1711.07240)
 ![paper one](../img/paper_one.png)
 
-该篇论文为COCO物体检测夺冠算法，原文作者解读视频[参见](https://v.douyu.com/show/zBjq4Mepw4Q75Ea8),讲解PPT[[pdf]](https://www.jianguoyun.com/p/Ddkg60sQhprUBhjs0zw)
+该篇论文为COCO物体检测夺冠算法，原文作者解读视频[参见](https://v.douyu.com/show/zBjq4Mepw4Q75Ea8),
+讲解PPT[[pdf]](https://www.jianguoyun.com/p/Ddkg60sQhprUBhjs0zw)
 > * Variance Equivalence
 > * Warmup Strategy
 > * Cross-GPU Batch Normalization  
