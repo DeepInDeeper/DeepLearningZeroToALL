@@ -1,4 +1,5 @@
-更新：  
+更新：   
+* [深度学习2017优秀论文](../Note/Niubility/paper2017.md) 
 ## 2.2 优化      
 **[X]**Ruder S. "**An overview of gradient descent optimization algorithms**"
 [[pdf]](https://arxiv.org/abs/1609.04747)**(梯度下降优化算法综述，2017，

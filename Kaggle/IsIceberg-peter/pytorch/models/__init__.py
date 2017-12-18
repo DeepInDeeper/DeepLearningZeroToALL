@@ -1,2 +1,3 @@
-from diff_net import SimpleNet,ResNetLike
-from convert import *
+#coding:utf-8
+from .mynet import SimpleNet,ResNetLike
+from .convert import *

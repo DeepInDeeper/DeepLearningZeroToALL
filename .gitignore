@@ -17,3 +17,6 @@ out
 */**/*.so*
 */**/*.dylib*
 
+*/.ipynb_checkpoints
+*/**/.ipynb_checkpoints
+*/**/**/.ipynb_checkpoints
