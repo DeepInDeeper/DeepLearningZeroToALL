@@ -1,9 +1,13 @@
-更新：  
-## 2.2 优化  
-**[X]**Ruder S. "**An overview of gradient descent optimization algorithms**"[[pdf]](https://arxiv.org/abs/1609.04747)**(梯度下降优化算法综述，2017，值得看[中文翻译](http://blog.csdn.net/heyongluoyao8/article/details/52478715))** :star::star::star:   
----
+更新：   
+* [深度学习2017优秀论文](../Note/Niubility/paper2017.md) 
+## 2.2 优化      
+**[X]**Ruder S. "**An overview of gradient descent optimization algorithms**"
+[[pdf]](https://arxiv.org/abs/1609.04747)**(梯度下降优化算法综述，2017，
+[中文翻译](http://blog.csdn.net/heyongluoyao8/article/details/52478715))
+** :star::star::star:    
+  
 深度学习路线图框架  
-1 [深度学习历史和基础](#basic) 
+1 深度学习历史和基础  
 1.0 书籍  
 1.1 调查  
 1.2 深度信念网络（DBN）（深度学习里程碑）  
@@ -27,7 +31,7 @@
 3.6 机器人技术  
 3.7 艺术方面  
 3.8 对象分割   
----   
+  
 
 原文出处：https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap  
 同样，你可以在[原文](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)使用脚本下载一下论文  
@@ -44,11 +48,13 @@
 你会发现很多很新的文章，但真的值得一读.  
 我也将继续在路线图继续添加文章
 
----------------------------------------
-<div id="basic"></div>
-# 1 深度学习历史和基础  
-## 1.0 书籍  
-**[0]** Bengio, Yoshua, Ian J. Goodfellow, and Aaron Courville. "**Deep learning**." An MIT Press book. (2015). [[html]](http://www.deeplearningbook.org/) **(深度学习圣经，你可以在阅读以下论文时阅读这本书。)** :star::star::star::star::star:  
+
+=======
+
+# 1 深度学习历史和基础   
+## 1.0 书籍    
+**[0]** Bengio, Yoshua, Ian J. Goodfellow, and Aaron Courville. "**Deep learning**." An MIT Press book. (2015). [[html]](http://www.deeplearningbook.org/) **(深度学习圣经，你可以在阅读以下论文时阅读这本书。)** :star::star::star::star::star:    
+>>>>>>> 0232d0c39e7818e9c953bea2446dc0cac39e4e39
 
 ## 1.1 调查
 **[1]** LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. "**Deep learning**." Nature 521.7553 (2015): 436-444. [[pdf]](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf) **(三巨头的调查)** :star::star::star::star::star:  

@@ -1,0 +1,22 @@
+# IntelliJ IDEA Project files
+.idea
+*.iml
+*.ipr
+*.iws
+*.xml
+out
+
+*/**/__pycache__
+
+*/*.pyc
+*/**/*.pyc
+*/**/**/*.pyc
+*/**/**/**/*.pyc
+*/**/**/**/**/*.pyc
+*/*.so*
+*/**/*.so*
+*/**/*.dylib*
+
+*/.ipynb_checkpoints
+*/**/.ipynb_checkpoints
+*/**/**/.ipynb_checkpoints
