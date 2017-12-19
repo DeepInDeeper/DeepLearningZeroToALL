@@ -46,8 +46,8 @@
 
 ---------------------------------------
 <div id="basic"></div>
-# 1 深度学习历史和基础
-## 1.0 书籍
+# 1 深度学习历史和基础  
+## 1.0 书籍  
 **[0]** Bengio, Yoshua, Ian J. Goodfellow, and Aaron Courville. "**Deep learning**." An MIT Press book. (2015). [[html]](http://www.deeplearningbook.org/) **(深度学习圣经，你可以在阅读以下论文时阅读这本书。)** :star::star::star::star::star:  
 
 ## 1.1 调查
