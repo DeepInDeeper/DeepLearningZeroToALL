@@ -14,7 +14,7 @@ import torch.optim as optim
 
 
 use_cuda = torch.cuda.is_available()
-BASE_FOLDER = '/media/yijie/文档/dataset/kaggle_Iceberg'
+BASE_FOLDER = 'D:/dataset/kaggle_Iceberg'
 
 def generateSingleModel(model,train_loader, val_loader, train_ds, val_ds,LR,num_epoches):
     use_cuda = torch.cuda.is_available()
