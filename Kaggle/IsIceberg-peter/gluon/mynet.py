@@ -4,63 +4,50 @@ from mxnet.gluon import nn
 from mxnet import nd
 from mxnet import init
 
-## 使用ResNet框架
-class Residual(nn.HybridBlock):
-    def __init__(self, channels, same_shape=True, **kwargs):
-        super(Residual, self).__init__(**kwargs)
-        self.same_shape = same_shape
+## model
+class Conv(nn.HybridBlock):
+    """docstring for Conv"""
+    def __init__(self, channels,kernel_size,pool_size,strides,dropout):
+        super(Conv, self).__init__()
         with self.name_scope():
-            strides = 1 if same_shape else 2
-            self.conv1 = nn.Conv2D(channels, kernel_size=3, padding=1,
-                                  strides=strides)
-            self.bn1 = nn.BatchNorm()
-            self.conv2 = nn.Conv2D(channels, kernel_size=3, padding=1)
-            self.bn2 = nn.BatchNorm()
-            if not same_shape:
-                self.conv3 = nn.Conv2D(channels, kernel_size=1,
-                                      strides=strides)
+            self.conv = nn.Conv2D(channels,kernel_size=kernel_size,activation="relu")
+            self.bn = nn.BatchNorm()
+            self.pool = nn.MaxPool2D(pool_size=pool_size,strides=strides)
+            self.drop = nn.Dropout(dropout)
 
-    def hybrid_forward(self, F, x):
-        out = F.tanh(self.bn1(self.conv1(x)))
-        out = self.bn2(self.conv2(out))
-        if not self.same_shape:
-            x = self.conv3(x)
-        return F.tanh(out + x)
+    def hybrid_forward(self,F,x):
+        out = self.conv(x)
+        out = self.bn(out)
+        out = self.pool(out)
+        out = self.drop(out)
+        return out
 
-    
-class ResNet(nn.HybridBlock):
-    def __init__(self, num_classes, verbose=False, **kwargs):
-        super(ResNet, self).__init__(**kwargs)
-        self.verbose = verbose
+class MyModel(nn.HybridBlock):
+    """docstring for MyModel"""
+    def __init__(self,num_outputs,verbose=False):
+        super(MyModel, self).__init__()
         with self.name_scope():
+            self.verbose = verbose
             net = self.net = nn.HybridSequential()
-            # 模块1
-            net.add(nn.Conv2D(channels=32, kernel_size=3, strides=1, 
-                              padding=1))
-            net.add(nn.BatchNorm())
-            net.add(nn.Activation(activation='tanh'))
-            # 模块2
-            for _ in range(3):
-                net.add(Residual(channels=32))
-            # 模块3
-            net.add(Residual(channels=64, same_shape=False))
-            for _ in range(2):
-                net.add(Residual(channels=64))
-            # 模块4
-            net.add(Residual(channels=128, same_shape=False))
-            for _ in range(2):
-                net.add(Residual(channels=128))
-            # 模块5
-            net.add(nn.GlobalAvgPool2D())
-            net.add(nn.Flatten())
-            net.add(nn.Dense(num_classes))
 
-    def hybrid_forward(self, F, x):
+            net.add(Conv(channels=8,kernel_size=3,pool_size=3,strides=2,dropout=0.2))
+            net.add(Conv(channels=16,kernel_size=3,pool_size=2,strides=2,dropout=0.2))
+            net.add(Conv(channels=32,kernel_size=3,pool_size=2,strides=2,dropout=0.3))
+            net.add(Conv(channels=64,kernel_size=3,pool_size=2,strides=2,dropout=0.3))
+
+            net.add(nn.Flatten())
+            net.add(nn.Dense(512))
+            net.add(nn.Dropout(0.2))
+            net.add(nn.Dense(256))
+            net.add(nn.Dropout(0.5))
+            net.add(nn.Dense(num_outputs))
+    def hybrid_forward(self,F,x):
         out = x
-        for i, b in enumerate(self.net):
+        for i,b in enumerate(self.net):
             out = b(out)
             if self.verbose:
                 print('Block %d output: %s'%(i+1, out.shape))
+            
         return out
 
 
@@ -69,37 +56,40 @@ class ResNet(nn.HybridBlock):
 ## mynet
 class ConvRes(nn.HybridBlock):
     """docstring for ConvRes"""
-    def __init__(self, channels,same_shape=True):
+    def __init__(self, channels,same_shape):
         super(ConvRes, self).__init__()
         self.same_shape = same_shape
         with self.name_scope():
             strides = 1 if same_shape else 2
-            self.bn = nn.BatchNorm()
-            self.conv = nn.Conv2D(channels,kernel_size=3,padding=1,strides=strides)
-            self.act = nn.LeakyReLU(alpha=1)
+          
+            self.bn1 = nn.BatchNorm()
+            self.conv1 = nn.Conv2D(channels, kernel_size=3, padding=1)
+            #self.act1 = nn.LeakyReLU(alpha=1)
             if not same_shape:
-                self.conv2 = nn.Conv2D(channels,kernel_size=1,strides=strides)
-    
+                self.conv3 = nn.Conv2D(channels, kernel_size=1,
+                                      strides=strides)          
     def hybrid_forward(self,F,x):
-        out = self.bn(x)
-        out = self.conv(x)
-        out = self.act(x)
+        out = self.bn1(x)
+        out = self.conv1(out)
+        out = F.tanh(out)
         if not self.same_shape:
-            out = self.conv2(out)
-        return out
+            x = self.conv3(x)
+        return F.tanh(out+x)
+
+
         
 
 class ConvCNN(nn.HybridBlock):
     """docstring for ConvCNN"""
-    def __init__(self, channels,avg=True): 
+    def __init__(self, channels,kernel_size,pool_size,avg=True): 
         super(ConvCNN, self).__init__()
         self.avg= avg
-        self.avgpool = nn.AvgPool2D(pool_size=2)
+        self.avgpool = nn.AvgPool2D(pool_size=pool_size)
         with self.name_scope():
-            self.conv = nn.Conv2D(channels=32, kernel_size=3, strides=1, padding=1)
+            self.conv = nn.Conv2D(channels=32, kernel_size=kernel_size, padding=2,strides=1)
             self.bn = nn.BatchNorm()
             self.act = nn.LeakyReLU(alpha=1)
-            self.maxpool = nn.AvgPool2D(pool_size=2, strides=2)
+            self.maxpool = nn.MaxPool2D(pool_size=pool_size, strides=pool_size)
 
 
     def hybrid_forward(self,F,x):
@@ -121,21 +111,23 @@ class SimpleNet(nn.HybridBlock):
             net = self.net = nn.HybridSequential()
 
             net.add(nn.AvgPool2D(pool_size=1))
-
-            for _ in range(3):
-                net.add(ConvCNN(channels=32))
+            net.add(ConvCNN(channels=32,kernel_size=7,pool_size=4,avg=False))
+            net.add(nn.Dropout(.7))
+            net.add(ConvCNN(channels=32,kernel_size=5,pool_size=2,avg=True))
+            net.add(ConvCNN(channels=32,kernel_size=5,pool_size=2,avg=True))
 
             #net.add(ConvRes(channels=64,same_shape=False))
-            net.add(nn.Dropout(.7))
+            
             net.add(nn.Flatten())
             net.add(nn.Dense(num_classes))
 
     def hybrid_forward(self,F,x):
         out = x
         for i,b in enumerate(self.net):
+            out = b(out)
             if self.verbose:
                 print('Block %d output: %s'%(i+1, out.shape))
-            out = b(out)
+            
         return out
 
 
@@ -145,6 +137,9 @@ def get_simple_net(ctx,net):
         net = SimpleNet(num_outputs)
     elif net == "resnet":
         net = ResNet(num_outputs)
+    elif net == "mymode":
+        net = MyModel(num_outputs)
+
     net.initialize(ctx=ctx, init=init.Xavier())
     return net
 
