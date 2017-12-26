@@ -42,9 +42,9 @@ class VggNet(nn.HybridBlock):
 
 			net.add(nn.Flatten())
 			net.add(nn.Dense(1024,activation="relu"))
-			net.add(nn.Dropout(.5))
+			net.add(nn.Dropout(.8))
 			net.add(nn.Dense(1024,activation="relu"))
-			net.add(nn.Dropout(.5))
+			net.add(nn.Dropout(.8))
 			net.add(nn.Dense(num_outputs))
 
 	def hybrid_forward(self,F,x):
