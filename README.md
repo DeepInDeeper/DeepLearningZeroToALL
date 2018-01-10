@@ -1,5 +1,5 @@
 # 深度学习
-[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/lawlite19/MachineLearning_Python/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/PeterChenYijie/DeepLearningZeroToALL/blob/master/LICENSE)
 
 # 深度学习
 
