@@ -10,7 +10,7 @@
 
 ## 注意:
 
-> * 详细描述使用框架、比赛内容，用户（如gloun_cifar10_peter）  
+> * 详细描述使用框架、比赛内容，用户（如@peter cifar10-gluon）  
 > * 不必放你自己的数据(创建你自己的一个连接分享就好)                   
 > * 为更好确保你的工程能够为人所用，写一个 requirement.txt 
 
@@ -30,7 +30,7 @@
 
 ## notes:
 
-> 1.Write clearly what framework is used in every project and in the end,add your name\(such as,gloun\_cifar10\_peter\)  
+> 1.Write clearly what framework is used in every project and in the end,add your name\(such as,@peter cifar10-gluon)  
 > 2.Do not need to put your data in this repo,just show link\(it can be origin links or your private link for your project\)  
 > 3.For making sure your project can run in every mechine,it is beter to write requirement.txt to tell others some requirements
 
