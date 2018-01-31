@@ -1,0 +1,1 @@
+本工程用来学习通过微调来实现迁移学习，更多内容参考[这里](https://zh.gluon.ai/chapter_computer-vision/fine-tuning.html)
