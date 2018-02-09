@@ -16,7 +16,7 @@
 > 机器学习算法python实现[参考](https://github.com/lawlite19/MachineLearning_Python)  
 > 机器学习资源 |Machine learning Resources[参考](https://github.com/allmachinelearning/MachineLearning)
 
-知识点(具体更新学习放在[这里](https://www.gitbook.com/book/peterchenyijie/machine_learning/details))：   
+知识点(具体更新学习放在[这里](https://github.com/PeterChenYijie/MachineLearningZeroToALL))：   
 1.线性回归  
 2.逻辑回归  
 3.BP神经网络  
