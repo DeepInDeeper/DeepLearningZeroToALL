@@ -24,6 +24,16 @@
 
 链接内容:    
 [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+[中文文案排版指北（简体中文版）](Copywriting Guidelines.md)
+
+
+# DeepLearning
+
+1.DL projects for some competitions(such as,ImageNet,Kaggle,AI challenger...)  
+2.Make some notes about ML,DL  
+3.Try to use diffrent frames (tensorflow，mxnet，pytorch)  
+4.Add note to record some interview skills
+=======
 
 # Learn DeepLearning from Zero to One
 This project is built to record personal DeepLearning process.Of course,during the process,I will try to use some 
@@ -40,16 +50,6 @@ The Table will be listed on:
 * extra
 
 
-This is work in progress,it still need every guy to be finished in collaborative work.Here We have some notices
-before you pull request.
-
-> 1.Write clearly what framework is used in every project and in the end,add your name(such as,@peter cifar10-gluon)  
-> 2.Do not need to put your data in this repo,just show link(it can be origin links or your private link for your project)  
-> 3.For making sure your project can run in every mechine,it is beter to write `requirement.txt` and `readme.md` to tell others some requirements
-
-I hope every guy can share your project and notes about DL, and then all of us can quickly learn more about DL...  
-In the end,enjoy it !!!  
-
 Some Link:    
 [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
-
+[Chinese Copywriting Guidelines](Copywriting Guidelines.en.md)
