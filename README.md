@@ -23,8 +23,8 @@
 最后，希望大家能够积极踊跃参与！  
 
 链接内容:    
-[深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
-[中文文案排版指北（简体中文版）](Copywriting Guidelines.md)
+* [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+* [中文文案排版指北（简体中文版）](Copywriting Guidelines.md)
 
 
 # DeepLearning
@@ -51,5 +51,5 @@ The Table will be listed on:
 
 
 Some Link:    
-[Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
-[Chinese Copywriting Guidelines](Copywriting Guidelines.en.md)
+* [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+* [Chinese Copywriting Guidelines](Copywriting Guidelines.en.md)

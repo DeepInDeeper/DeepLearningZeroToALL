@@ -5,10 +5,8 @@
 
 Other languages:
 
-- [English](README.en.md)
-- [Chinese Traditional](https://github.com/sparanoid/chinese-copywriting-guidelines)
-- [Chinese Simplified](README.md)
-
+- [英文](Copywriting Guidelines.en.md)
+- [中文简体](Copywriting Guidelines.md)
 -----
 
 ## 目录
