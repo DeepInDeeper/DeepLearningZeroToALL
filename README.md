@@ -27,13 +27,7 @@
 * [中文文案排版指北（简体中文版）](Copywriting%20Guidelines.md)
 
 
-# DeepLearning
 
-1.DL projects for some competitions(such as,ImageNet,Kaggle,AI challenger...)  
-2.Make some notes about ML,DL  
-3.Try to use diffrent frames (tensorflow，mxnet，pytorch)  
-4.Add note to record some interview skills
-=======
 
 # Learn DeepLearning from Zero to One
 This project is built to record personal DeepLearning process.Of course,during the process,I will try to use some 
