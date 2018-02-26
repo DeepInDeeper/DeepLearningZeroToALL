@@ -23,7 +23,7 @@
 
 这个项目还是进行中，仍旧需要大伙共同协助完成。我们希望得到你的推送，这里我们有一些提醒：
 
-> * 详细描述使用框架、比赛内容，用户（如@peter cifar10-gluon）  
+> * 详细描述使用框架、比赛内容，用户（如@Zhangsan cifar10-gluon）  
 > * 不必放你自己的数据(创建你自己的一个连接分享就好)                   
 > * 为更好确保你的工程能够为人所用，写一个 requirement.txt 和readme.md
 
@@ -44,10 +44,6 @@ For newer,I strongly recommend to read the following GitHub project:
 * PaddlePaddle:[Quick Start](http://www.paddlepaddle.org/docs/develop/documentation/zh/getstarted/quickstart_cn.html)
 
 
-1.DL projects for some competitions(such as,ImageNet,Kaggle,AI challenger...)  
-2.Make some notes about ML,DL  
-3.Try to use different frames (TensorFlow,MXNet,PyTorch,PaddlePaddle)  
-4.Add note to record some interview skills
 
 
 This project is built to record personal DeepLearning process.Of course,during the process,I will try to use some 
@@ -64,6 +60,10 @@ The Table will be listed on:
 * [NLP](Natural-language-processing)
 * [extra](Extra)
 
+This project is still ongoing,I hope more guys can join it and push your State-Of-Art code.Before you push,I hope you can read those guides:
+> * describe frame,content,user(such @ZhangSan cifar-10-gluon)
+> * Not need to put your own data (just use links to share the data)
+> * Better to write requirement.txt and readme.md 
 
 Some Links:    
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
