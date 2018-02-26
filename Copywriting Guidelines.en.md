@@ -5,8 +5,8 @@ Chinese copywriting guidelines for better written communication.
 
 Other languages:
 
-- [English](Copywriting Guidelines.en.md)
-- [Chinese Simplified](Copywriting Guidelines.md)
+- [English](Copywriting%20Guidelines.en.md)
+- [Chinese Simplified](Copywriting%20Guidelines.md)
 
 -----
 

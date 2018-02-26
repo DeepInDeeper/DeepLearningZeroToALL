@@ -5,8 +5,8 @@
 
 Other languages:
 
-- [英文](Copywriting Guidelines.en.md)
-- [中文简体](Copywriting Guidelines.md)
+- [英文](Copywriting%20Guidelines.en.md)
+- [中文简体](Copywriting%20Guidelines.md)
 -----
 
 ## 目录

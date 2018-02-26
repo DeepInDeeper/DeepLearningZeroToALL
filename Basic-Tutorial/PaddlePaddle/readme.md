@@ -1,0 +1,1 @@
+official tutorial [here](http://www.paddlepaddle.org/docs/develop/book/01.fit_a_line/index.cn.html)
