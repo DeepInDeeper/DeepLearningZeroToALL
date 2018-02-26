@@ -34,7 +34,8 @@
 * [中文文案排版指北（简体中文版）](Copywriting%20Guidelines.md)
 
 
-# DeepLearning  
+
+# Learn DeepLearning from Zero to One
 
 For newer,I strongly recommend to read the following GitHub project:  
 * TensorFlow:[TensorFlow Basic Tutorial Labs](https://github.com/hunkim/DeepLearningZeroToAll)
@@ -47,9 +48,8 @@ For newer,I strongly recommend to read the following GitHub project:
 2.Make some notes about ML,DL  
 3.Try to use different frames (TensorFlow,MXNet,PyTorch,PaddlePaddle)  
 4.Add note to record some interview skills
-=======
 
-# Learn DeepLearning from Zero to One
+
 This project is built to record personal DeepLearning process.Of course,during the process,I will try to use some 
 different frame to learn for providing more remarkable examples.  
 The Table will be listed on:
