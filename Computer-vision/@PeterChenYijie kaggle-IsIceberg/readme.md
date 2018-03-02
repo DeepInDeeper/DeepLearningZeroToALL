@@ -34,4 +34,4 @@ The data \(`train.json`,`test.json`\) is presented in`json`format. The files con
     `train.json`
     .
 
-![图片](../img/kaggle_IsIceberg.PNG)
+![图片](../../img/kaggle_IsIceberg.PNG)

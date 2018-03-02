@@ -5,7 +5,8 @@
 对于初学者，我建议先参考这些github项目:   
 * TensorFlow:[TensorFlow Basic Tutorial Labs](https://github.com/hunkim/DeepLearningZeroToAll)
 * MXNet:[gluon-tutorials-zh](https://github.com/mli/gluon-tutorials-zh)
-* PyTorch:[PyTorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
+* PyTorch:[PyTorch-tutorial](https://github.com/yunjey/pytorch-tutorial)、
+[code-of-learn-deep-learning-with-pytorch](https://github.com/SherlockLiao/code-of-learn-deep-learning-with-pytorch)
 * PaddlePaddle:[Quick Start](http://www.paddlepaddle.org/docs/develop/documentation/zh/getstarted/quickstart_cn.html)
 
 本工程建立用来记录个人深度学习的过程。当然，在整个学习过程中，将尝试用不同的深度学习框架来进行学习。以便提供更多学习范例。  
@@ -32,6 +33,7 @@
 一些链接:    
 * [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 * [中文文案排版指北（简体中文版）](Copywriting%20Guidelines.md)
+* [专业术语 updating](Note/terminology.md)
 
 
 
@@ -40,7 +42,8 @@
 For newer,I strongly recommend to read the following GitHub project:  
 * TensorFlow:[TensorFlow Basic Tutorial Labs](https://github.com/hunkim/DeepLearningZeroToAll)
 * MXNet:[gluon-tutorials-zh](https://github.com/mli/gluon-tutorials-zh)
-* PyTorch:[PyTorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
+* PyTorch:[PyTorch-tutorial](https://github.com/yunjey/pytorch-tutorial)、
+[code-of-learn-deep-learning-with-pytorch](https://github.com/SherlockLiao/code-of-learn-deep-learning-with-pytorch)
 * PaddlePaddle:[Quick Start](http://www.paddlepaddle.org/docs/develop/documentation/zh/getstarted/quickstart_cn.html)
 
 
@@ -67,4 +70,5 @@ This project is still ongoing,I hope more guys can join it and push your State-O
 
 Some Links:    
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
-* [Chinese Copywriting Guidelines](Copywriting%20Guidelines.en.md)
+* [English Copywriting Guidelines](Copywriting%20Guidelines.en.md)
+* [Terminology updating](Note/terminology.md)

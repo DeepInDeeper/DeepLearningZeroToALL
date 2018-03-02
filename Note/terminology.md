@@ -1,4 +1,5 @@
 # 人工智能相关术语（按首字母排序）
+其他：[218个机器学习术语词汇表（收藏）](http://blog.csdn.net/t7sfokzord1jaymsfk4/article/details/79320071)
 
 
 缩写|英语|汉语

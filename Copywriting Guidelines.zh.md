@@ -1,12 +1,11 @@
 # 中文文案排版指北
-[![devDependency Status](https://david-dm.org/mzlogin/chinese-copywriting-guidelines/dev-status.svg)](https://david-dm.org/mzlogin/chinese-copywriting-guidelines#info=devDependencies)
 
 统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质。
 
 Other languages:
 
 - [英文](Copywriting%20Guidelines.en.md)
-- [中文简体](Copywriting%20Guidelines.md)
+- [中文简体](Copywriting%20Guidelines.zh.md)
 -----
 
 ## 目录
