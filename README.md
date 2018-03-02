@@ -24,14 +24,16 @@
 
 这个项目还是进行中，仍旧需要大伙共同协助完成。我们希望得到你的推送，这里我们有一些提醒：
 
-> * 详细描述使用框架、比赛内容，用户（如@Zhangsan cifar10-gluon）  
+> * 详细描述使用框架、比赛内容，用户（如@Zhangsan cifar10-tensorflow）  
 > * 不必放你自己的数据(创建你自己的一个连接分享就好)                   
 > * 为更好确保你的工程能够为人所用，写一个 requirement.txt 和readme.md
 
 最后，希望大家能够积极踊跃参与！  
 
-一些链接:    
+一些链接: 
+* [吴恩达 Coursera 深度学习 代码](https://github.com/Kulbear/deep-learning-coursera)   
 * [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+`论文pdf`：百度网盘[链接](https://pan.baidu.com/s/1ghgvowr)
 * [中文文案排版指北（简体中文版）](Copywriting%20Guidelines.md)
 * [专业术语 updating](Note/terminology.md)
 
@@ -64,7 +66,7 @@ The Table will be listed on:
 * [extra](Extra)
 
 This project is still ongoing,I hope more guys can join it and push your State-Of-Art code.Before you push,I hope you can read those guides:
-> * describe frame,content,user(such @ZhangSan cifar-10-gluon)
+> * describe frame,content,user(such @ZhangSan cifar-10-tensorflow)
 > * Not need to put your own data (just use links to share the data)
 > * Better to write requirement.txt and readme.md 
 
