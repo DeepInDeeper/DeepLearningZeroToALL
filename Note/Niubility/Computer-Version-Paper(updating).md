@@ -1,4 +1,5 @@
 ---不定期更新...  
+要找一个适合的分类方式对其进行分类了....
 论文速递信息，涉及目标检测、图像分割、网络优化、人脸表情识别、SLAM和OCR等方向。
 
 以下文章来自[这里](http://mp.weixin.qq.com/s/w09dvh_zPN8DYWqVSXtKIQ),欢迎关注！如有侵权，请联系。  
@@ -99,7 +100,53 @@
 **[32]** "**PDE-constrained optimization in medical image analysis**"[[pdf]][pdf-32]
 (偏微分方程约束优化问题在医学成像中的公式化、离散化和数值解法)  
  
+**[33]** "**Hashing with Mutual Information**"[[pdf]][pdf-33]
+(基于信息理论量、互信息(mutual)优化的监督哈希(hashing)方法)
 
+**[34]** "**Tree Species Identification from Bark Images Using Convolutional Neural Networks**"[[pdf]][pdf-34]
+(树皮检测!!!)
+
+**[35]** "**Protecting JPEG Images Against Adversarial Attacks**"[[pdf]][pdf-35]
+(JPEG GAN)
+
+**[36]** "**Multi-Instance Dynamic Ordinal Random Fields for Weakly-supervised Facial Behavior Analysis**"[[pdf]][pdf-36]
+(多示例学习Multi-Instance-Learning (MIL))
+
+**[37]** "**Monocular Depth Estimation using Multi-Scale Continuous CRFs as Sequential Deep Networks**"[[pdf]][pdf-37]
+(单目图像估计深度距离方向)
+
+**[38]** "**Pose-Robust Face Recognition via Deep Residual Equivariant Mapping**"[[pdf]][pdf-38]
+(侧脸识别，不错哟！！)
+
+**[39]** "**Deep Unsupervised Intrinsic Image Decomposition by Siamese Training**"[[pdf]][pdf-39]
+(？？？)
+
+**[40]** "**Automated Map Reading: Image Based Localisation in 2-D Maps Using Binary Semantic Descriptors**"[[pdf]][pdf-40]
+(地图的语义匹配)
+
+**[41]** "**Contained Neural Style Transfer for Decorated Logo Generation**"[[pdf]][pdf-41]
+(Logo的风格转换)
+
+**[42]** "**SD-CNN: a Shallow-Deep CNN for Improved Breast Cancer Diagnosis**"[[pdf]][pdf-42]
+(CNN 乳腺癌诊断)
+
+**[43]** "**Deep Cocktail Network: Multi-source Unsupervised Domain Adaptation with Category Shift**"[[pdf]][pdf-43]
+(？？？)
+
+**[44]** "**Driving Digital Rock towards Machine Learning: predicting permeability with Gradient Boosting and Deep Neural Networks**"[[pdf]][pdf-44]
+(？？？)
+
+**[45]** "**Deep-neural-network based sinogram synthesis for sparse-view CT image reconstruction**"[[pdf]][pdf-45]
+(sinogram合成方法，用于稀疏图CT)
+
+**[46]** "**Meta-Learning for Semi-Supervised Few-Shot Classification**"[[pdf]][pdf-46]
+(Few-shot Learning)
+
+**[47]** "**Semi-parametric Topological Memory for Navigation**"[[pdf]][pdf-47]
+()
+
+**[48]** "**Fast and accurate computation of orthogonal moments for texture analysis**"[[pdf]][pdf-48]
+(正交矩)
 
 
 
@@ -138,4 +185,19 @@
 [pdf-30]: https://arxiv.org/abs/1803.00500
 [pdf-31]: https://arxiv.org/abs/1803.00094
 [pdf-32]: https://arxiv.org/abs/1803.00058
-
+[pdf-33]: https://arxiv.org/abs/1803.00974
+[pdf-34]: https://arxiv.org/abs/1803.00949
+[pdf-35]: https://arxiv.org/abs/1803.00940
+[pdf-36]: https://arxiv.org/abs/1803.00907
+[pdf-37]: https://arxiv.org/abs/1803.00891
+[pdf-38]: https://arxiv.org/abs/1803.00839
+[pdf-39]: https://arxiv.org/abs/1803.00805
+[pdf-40]: https://arxiv.org/abs/1803.00788
+[pdf-41]: https://arxiv.org/abs/1803.00686
+[pdf-42]: https://arxiv.org/abs/1803.00663
+[pdf-43]: https://arxiv.org/abs/1803.00830
+[pdf-44]: https://arxiv.org/abs/1803.00758
+[pdf-45]: https://arxiv.org/abs/1803.00694
+[pdf-46]: https://arxiv.org/abs/1803.00676
+[pdf-47]: https://arxiv.org/abs/1803.00653
+[pdf-48]: https://arxiv.org/abs/1803.00638
