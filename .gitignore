@@ -6,13 +6,13 @@
 *.xml
 out
 
-*/**/__pycache__
 
-*/*.pyc
-*/**/*.pyc
-*/**/**/*.pyc
-*/**/**/**/*.pyc
-*/**/**/**/**/*.pyc
+*.tar.gz
+
+*/**/__pycache__
+*/**/**/__pycache__
+
+*.pyc
 */*.so*
 */**/*.so*
 */**/*.dylib*
@@ -21,9 +21,11 @@ out
 */**/.ipynb_checkpoints
 */**/**/.ipynb_checkpoints
 
-*/**/*.csv
-*/**/**/*.csv
-*/**/**/**/*.csv
 
-*/**/Untitled.ipynb
-*/**/**/Untitled.ipynb
+*.csv
+*.Untitled.ipynb
+
+*/**/**/cifar-10-batches-py
+*.pth
+*.html
+

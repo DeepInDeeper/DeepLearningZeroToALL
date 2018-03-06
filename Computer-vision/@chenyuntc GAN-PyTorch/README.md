@@ -1,5 +1,9 @@
 > Origin from [here](https://github.com/chenyuntc/pytorch-GAN)   
 
+Log:
+* Fix it to make it on `Windows10`、`python36`、`PyTorch` correctly. 
+* Later,I will do more work on GAN.Let us expect...
+
 
 # pytorch-GAN
 

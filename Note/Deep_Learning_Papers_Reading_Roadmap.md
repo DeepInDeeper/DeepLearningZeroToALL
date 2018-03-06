@@ -34,7 +34,8 @@
   
 
 原文出处：https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap  
-同样，你可以在[原文](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)使用脚本下载一下论文  
+同样，你可以在[原文](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)使用脚本下载论文。当然，贴心的小编这里
+准备了下载的大部分的论文，见[百度网盘链接](https://pan.baidu.com/s/1ghgvowr) 
 
 #  深度学习论文阅读路线图
 > 如果你是深度学习领域的新手，你可能会遇到的第一个问题是：“我应该从哪些文件开始阅读？

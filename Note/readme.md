@@ -1,6 +1,15 @@
-update...    
-这里存放一些资料  
-将深度学习的一些个人学习的整理放在[个人整理的深度学习](https://www.gitbook.com/book/peterchenyijie/deep_learning/details)很多内容有些纰漏。望广大网友积极提出意见
+> 这里是笔记的目录：
+
+* [图像处理](image_processing.md)
+
+* [机器学习](Mechine_Learning.md)
+* [深度学习术语](terminology.md)
+* [深度学习论文阅读路线图 ·中文版](Deep_Learning_Papers_Reading_Roadmap.md) 
+* [深度学习 综述文章](review.md) 
+* [深度学习笔记](DeepLearning.md)
+* [阅读论文 总结 这里](paper_read.md)
+* [盘点2017深度学习论文](Niubility/paper2017.md)  
+* [计算机视觉相关论文整合](Niubility/Computer-Version-Paper(updating).md)  
+* [深度学习 ·面试部分 待更新...](interview_intro.md)
 
 
-深度学习论文阅读路线图[参考](Deep_Learning_Papers_Reading_Roadmap.md)
