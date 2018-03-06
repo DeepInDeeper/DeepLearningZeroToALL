@@ -3,6 +3,7 @@
 * [图像处理](image_processing.md)
 
 * [机器学习](Mechine_Learning.md)
+* [深度学习 基本概念 先读](./../Basic-Tutorial/readme.md)
 * [深度学习术语](terminology.md)
 * [深度学习论文阅读路线图 ·中文版](Deep_Learning_Papers_Reading_Roadmap.md) 
 * [深度学习 综述文章](review.md) 
