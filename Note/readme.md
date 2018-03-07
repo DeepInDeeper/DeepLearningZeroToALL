@@ -11,6 +11,6 @@
 * [阅读论文 总结 这里](paper_read.md)
 * [盘点2017深度学习论文](Niubility/paper2017.md)  
 * [计算机视觉相关论文整合](Niubility/Computer-Version-Paper(updating).md)  
-* [深度学习 ·面试部分 待更新...](interview_intro.md)
+
 
 

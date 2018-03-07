@@ -36,12 +36,13 @@
 加稳定。相对于全量梯度下降，其**提高了每次学习的速度**。并且其**不用担心内存瓶颈**从而可以利用矩阵运
 算进行高效计算。一般而言每次更新随机选择[50,256]个样本进行学习，但是也要根据具体问题而选择，
 实践中可以进行**多次试验**，选择一个更新速度与更次次数都较适合的样本数。
-
-    for i in range(epochs):
-        np.random.shuffle(data)
-        for batch in get_batches(data, batch_size=50):
-            params_grad = evaluate_gradient(loss_function,batch,params)
-            params = params - learning_rate * params_grad  
+```
+for i in range(epochs):
+    np.random.shuffle(data)
+    for batch in get_batches(data, batch_size=50):
+        params_grad = evaluate_gradient(loss_function,batch,params)
+        params = params - learning_rate * params_grad  
+```
 存在的一些问题和挑战：
 * 合理的学习率的选择
 * 学习率调整（学习速率调度）  

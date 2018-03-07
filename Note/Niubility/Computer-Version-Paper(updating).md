@@ -1,7 +1,7 @@
 ---不定期更新...  
-要找一个适合的分类方式对其进行分类了....
-论文速递信息，涉及目标检测、图像分割、网络优化、人脸表情识别、SLAM和OCR等方向。
-
+TODO 要找一个适合的分类方式对其进行分类了....  
+>论文速递信息，涉及目标检测、图像分割、网络优化、人脸表情识别、SLAM和OCR等方向。
+---
 以下文章来自[这里](http://mp.weixin.qq.com/s/w09dvh_zPN8DYWqVSXtKIQ),欢迎关注！如有侵权，请联系。  
 
 **[1]** "**The 2018 DAVIS Challenge on Video Object Segmentation**"
@@ -11,7 +11,7 @@
 (对自然图像进行联合2D和3D人类姿态估计的端到端框架，LCR-Net)  
 
 **[3]** "**Graph Kernels based on High Order Graphlet Parsing and Hashing**"[[pdf]][pdf-03]
-(一个新的随机搜索程序，其有效地分析给定的图和提取/采样无限高阶的graphlets)  
+(一个新的随机搜索程序，其有效地分析给定的图和提取/采样无限高阶的 graphlets )  
 
 **[4]** "**Yedrouj-Net: An efficient CNN for spatial steganalysis**"[[pdf]][pdf-04]
 (一种CNN(Yedrouj-Net)，在对图像进行隐写分析的错误概率方面达到the state-of-the-art)  
@@ -23,7 +23,7 @@
 (揭露关于人脸识别的DNNs鲁棒性的三方面)  
 
 **[7]** "**Calcium Removal From Cardiac CT Images Using Deep Convolutional Neural Network**"[[pdf]][pdf-07]
-(多步法修复处理的机器学习方法;Dense-Unet;CT图像)  
+(多步法修复处理的机器学习方法;Dense-Unet; CT 图像)  
 
 **[8]** "**Satellite imagery analysis for operational damage assessment in Emergency situations**"[[pdf]][pdf-08]
 (机器学习和计算机视觉在遥感图像中的应用；灾害管理)  
@@ -35,13 +35,13 @@
 (通过深度学习来检测和识别非法成分)  
 
 **[11]** "**Poisson Image Denoising Using Best Linear Prediction: A Post-processing Framework**"[[pdf]][pdf-11]
-(基于最佳线性预测的patch-based方法，可以估计出原潜在的清晰图像)  
+(基于最佳线性预测的 patch-based 方法，可以估计出原潜在的清晰图像)  
 
 **[12]** "**Learning Filter Scale and Orientation In CNNs**"[[pdf]][pdf-12]
 ()  
 
 **[13]** "**A General Pipeline for 3D Detection of Vehicles**"[[pdf]][pdf-13]
-(采用任意2D目标检测网络，并将其与3D点云融合，使2D目标检测网络的最小变化来产生3D信息)  
+(采用任意2D目标检测网络，并将其与 3D 点云融合，使 2D 目标检测网络的最小变化来产生 3D 信息)  
 
 **[14]** "**MAGAN: Aligning Biological Manifolds**"[[pdf]][pdf-14]
 (Manifold-Aligning GAN)   
@@ -148,7 +148,41 @@
 **[48]** "**Fast and accurate computation of orthogonal moments for texture analysis**"[[pdf]][pdf-48]
 (正交矩)
 
+**[49]** "**ST-GAN: Spatial Transformer Generative Adversarial Networks for Image Compositing**"[[pdf]][pdf-49]
+(寻找对前景物体的真实几何校正的问题，使得它在合成到背景图像时看起来很自然)
 
+**[50]** "**A generalized parametric 3D shape representation for articulated pose estimation**"[[pdf]][pdf-50]
+(一种新的参数3D形状表示法，称为广义高斯模型 (G-SoG)，特别适用于articulated objects的姿态估计)
+
+**[51]** "**Using Visual Saliency to Improve Human Detection with Convolutional Networks**"[[pdf]][pdf-51]
+(一种基于视觉显著性的方法来检测人类)
+
+**[52]** "**Affine Differential Invariants for Invariant Feature Point Detection**"[[pdf]][pdf-52]
+(基于差分不变量的2D仿射不变图像特征点检测器的应用)
+
+**[53]** "**AdaDepth: Unsupervised Content Congruent Adaptation for Depth Estimation**"[[pdf]][pdf-53]
+(提出了AdaDepth - 一种无监督的域适应策略，用于单眼深度估计的逐像素回归任务)
+
+**[54]** "**Predicting Out-of-View Feature Points for Model-Based Camera Pose Estimation**"[[pdf]][pdf-54]
+(深度学习来预测输入图像中的视点外（Out-of-View）的对象特征点)
+
+**[55]** "**Local Distance Metric Learning for Nearest Neighbor Algorithm**"[[pdf]][pdf-55]
+(提出了一种新的局部距离度量学习方法，即本地马氏距离学习（LMDL），以提高最近邻分类器的性能)
+
+**[56]** "**Beyond Context: Exploring Semantic Similarity for Tiny Face Detection**"[[pdf]][pdf-56]
+(将语义相似度建模为度量学习方案中的成对约束，然后利用图切割技术利用语义相似度来优化我们的预测)
+
+**[57]**"**Relocalization, Global Optimization and Map Merging for Monocular Visual-Inertial SLAM**"[[pdf]][pdf-57]
+(一个单目视觉惯性SLAM系统，它可以重新定位摄像机并获得先前建立的地图中的绝对姿态)  
+
+**[58]** "**Improving the Improved Training of Wasserstein GANs: A Consistency Term and Its Dual Effect**"[[pdf]][pdf-58]
+(将WGAN与最近的半监督学习方法之一无缝连接)
+
+**[59]** "**Path Aggregation Network for Instance Segmentation**"[[pdf]][pdf-59]
+(自适应特征池，它将特征网格和所有特征级别链接起来，使每个特征级别的有用信息直接传播到以下proposal子网络)
+
+**[60]** "**LSTD: A Low-Shot Transfer Detector for Object Detection**"[[pdf]][pdf-60]
+(一种新颖的low-shot转移检测器（ LSTD ）)
 
 
 
@@ -201,3 +235,16 @@
 [pdf-46]: https://arxiv.org/abs/1803.00676
 [pdf-47]: https://arxiv.org/abs/1803.00653
 [pdf-48]: https://arxiv.org/abs/1803.00638
+[pdf-49]: https://arxiv.org/abs/1803.01837
+[pdf-50]: https://arxiv.org/abs/1803.01780
+[pdf-51]: https://arxiv.org/abs/1803.01687
+[pdf-52]: https://arxiv.org/abs/1803.01669
+[pdf-53]: https://arxiv.org/abs/1803.01599
+[pdf-54]: https://arxiv.org/abs/1803.01577
+[pdf-55]: https://arxiv.org/abs/1803.01562
+[pdf-56]: https://arxiv.org/abs/1803.01555
+[pdf-57]: https://arxiv.org/abs/1803.01549
+[pdf-58]: https://arxiv.org/abs/1803.01541
+[pdf-59]: https://arxiv.org/abs/1803.01534
+[pdf-60]: https://arxiv.org/abs/1803.01529
+
