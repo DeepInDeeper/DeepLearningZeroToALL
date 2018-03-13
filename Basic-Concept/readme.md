@@ -55,8 +55,10 @@
 (梳理)
 ##### 1.1 LeNet-5
 ##### 1.2 Alex-Net 
+![img](./../img/AlexNet.png)
 ##### 1.3 GooLeNet
 ##### 1.4 VGG-Nets  
+![img](./../img/VGG16.png)
 ##### 1.5 Network-In-Network 
 ##### 1.6 ResNet
 
