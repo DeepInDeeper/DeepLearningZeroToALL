@@ -69,7 +69,7 @@ def parse(self,kwargs,print_=True):
             print('#################################')
             for k in dir(self):
                 if not k.startswith('_') and k!='parse' and k!='state_dict':
-                    print k,getattr(self,k)
+                    print (k,getattr(self,k))
             print('#################################')
         return self
 
