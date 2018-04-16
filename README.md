@@ -35,7 +35,10 @@
 * [深度学习阅读路线图](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 `论文pdf`：百度网盘[链接](https://pan.baidu.com/s/1ghgvowr)
 * [中文文案排版指北（简体中文版）](Copywriting%20Guidelines.md)
-* [专业术语 updating](Note/terminology.md)
+* [专业术语 updating](Note/terminology.md)   
+
+
+> *** [声明]此仓库是我开源到Github上的，可以遵守相关的开源协议进行使用。这个仓库中包含有很多研究者的论文、硕博士论文以及Github其他作者的开源仓库等都来源于在网上的下载，仅作为学术研究使用。如果作者或出版社有异议，请联系我进行删除。一切都是为了更好地学术！***
 
 
 
