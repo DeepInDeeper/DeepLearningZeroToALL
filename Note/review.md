@@ -33,7 +33,7 @@ updating...
 |**3.1 自然语言处理（NLP）**|  
 |情感分析中的深度学习[中文][3.1.1-zh]|Deep Learning for Sentiment Analysis: A Survey[[pdf]][3.1.1-en]
 |**3.2 物体检测**| 
-|卷积神经网络在图像分类和目标检测应用综述[中文][3.2.1-zh]|
+|卷积神经网络在图像分类和目标检测应用综述[中文][3.2.1-zh]|[other-link1][3.2.1-link1]
 |**3.3 视觉追踪**| 
 |基于深度学习的视觉SLAM综述[中文][3.3.1-zh]| 
 |基于深度学习的视频预测研究综述[中文][3.3.2-zh]|
@@ -66,6 +66,7 @@ updating...
 [3.1.1-zh]:https://www.jiqizhixin.com/articles/Deep-Learning-for-Sentiment-Analysis
 [3.1.1-en]:https://arxiv.org/ftp/arxiv/papers/1801/1801.07883.pdf
 [3.2.1-zh]:https://drive.google.com/open?id=1BOSOFxRpTCF59OIUtZeLQh9bjZAUeyJr
+[3.2.1-link1]:https://zhuanlan.zhihu.com/p/34325398
 [3.3.1-zh]:https://drive.google.com/open?id=1miYKoNOGPsxiZOcpQ6afBueEy1CjYmc9
 [3.3.2-zh]:https://drive.google.com/open?id=1FIjNxGAovZfl32SBUWyxPXey6DD-6Pph
 [3.4.1-zh-link]:https://zhuanlan.zhihu.com/p/27794982

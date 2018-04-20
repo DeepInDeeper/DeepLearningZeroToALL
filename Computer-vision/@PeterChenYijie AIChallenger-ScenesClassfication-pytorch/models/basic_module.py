@@ -35,11 +35,11 @@ class BasicModule(t.nn.Module):
         return file_name
 
     def get_optimizer(self,lr1,lr2):
-        self.optimizer =  t.optim.Adam(
+        self.optimizer = t.optim.Adam(
             [
              {'params': self.features.parameters(), 'lr': lr1},
              {'params': self.classifier.parameters(), 'lr':lr2}
-            ] )
+            ])
         return self.optimizer
 
     def update_optimizer(self,lr1,lr2):
