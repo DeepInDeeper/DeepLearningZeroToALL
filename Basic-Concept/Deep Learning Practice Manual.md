@@ -194,7 +194,5 @@ S型函数和tanh函数 会产生梯度饱和效应，因此在实践不建议�
 
 
 
-感谢：
-[@weixs](http://lamda.nju.edu.cn/weixs/) 魏秀参学长，旷视科技南京研究院负责人
 ---
 [pdf-01]:https://pan.baidu.com/s/1pLcaFij
