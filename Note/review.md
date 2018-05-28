@@ -11,6 +11,7 @@ updating...
 -----|-----|-----
 |**1 深度学习历史和基础**|
 |**1.0书籍**|  
+|by [@weixs][weixs] 解析卷积神经网络(入门级必备)   [[pdf]][1.0.1-zh]
 |**1.1 调查**|  
 |从起源到具体算法[中文][1.1.1-zh]|The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches[[pdf]][1.1.1-en]|强烈推荐
 |**1.2深度信念网络（DBN）（深度学习里程碑）**|  
@@ -33,7 +34,7 @@ updating...
 |**3.1 自然语言处理（NLP）**|  
 |情感分析中的深度学习[中文][3.1.1-zh]|Deep Learning for Sentiment Analysis: A Survey[[pdf]][3.1.1-en]
 |**3.2 物体检测**| 
-|卷积神经网络在图像分类和目标检测应用综述[中文][3.2.1-zh]|[other-link1][3.2.1-link1]
+|卷积神经网络在图像分类和目标检测应用综述[中文][3.2.1-zh]|[other-link1][3.2.1-link1];[目标检测合集][3.2.1-link2]
 |**3.3 视觉追踪**| 
 |基于深度学习的视觉SLAM综述[中文][3.3.1-zh]| 
 |基于深度学习的视频预测研究综述[中文][3.3.2-zh]|
@@ -55,6 +56,7 @@ updating...
 |对抗攻击的12种攻击方法和15种防御方法[中文][3.11.1-zh]|Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey[[pdf]][3.11.1-en]
 
 ---
+[1.0.1-zh]:https://pan.baidu.com/s/1pLcaFij
 [1.1.1-zh]:https://www.jiqizhixin.com/articles/2018-03-12-3
 [1.1.1-en]:https://arxiv.org/ftp/arxiv/papers/1803/1803.01164.pdf
 [2.1.1-zh]:http://zhuanlan.51cto.com/art/201703/536037.htm#topx
@@ -67,6 +69,7 @@ updating...
 [3.1.1-en]:https://arxiv.org/ftp/arxiv/papers/1801/1801.07883.pdf
 [3.2.1-zh]:https://drive.google.com/open?id=1BOSOFxRpTCF59OIUtZeLQh9bjZAUeyJr
 [3.2.1-link1]:https://zhuanlan.zhihu.com/p/34325398
+[3.2.1-link2]:https://github.com/amusi/awesome-object-detection
 [3.3.1-zh]:https://drive.google.com/open?id=1miYKoNOGPsxiZOcpQ6afBueEy1CjYmc9
 [3.3.2-zh]:https://drive.google.com/open?id=1FIjNxGAovZfl32SBUWyxPXey6DD-6Pph
 [3.4.1-zh-link]:https://zhuanlan.zhihu.com/p/27794982
@@ -82,3 +85,4 @@ updating...
 [3.10.1-zh]:https://drive.google.com/open?id=1qWfew-cwT53OfsIjBPRTRKgNRX9Rr8E7
 [3.11.1-zh]:https://www.jiqizhixin.com/articles/2018-03-05-4
 [3.11.1-en]:https://arxiv.org/pdf/1801.00553.pdf
+[weixs]:http://lamda.nju.edu.cn/weixs/
