@@ -57,8 +57,8 @@ tf.summary.scalar("accuracy", accuracy)
 # merge all summaries into a single "operation" which we can execute in a session 
 summary_op = tf.summary.merge_all()
 saver = tf.train.Saver()
-with tf.Session() as sess:
 
+with tf.Session() as sess:
 	# variables need to be initialized before we can use them
 	sess.run(tf.global_variables_initializer())
 	# create log writer object
