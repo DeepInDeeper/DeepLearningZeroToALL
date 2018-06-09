@@ -54,13 +54,24 @@
 
 (梳理)
 ##### 1.1 LeNet-5
-##### 1.2 Alex-Net 
+##### 1.2 AlexNet 
 ![img](./../img/AlexNet.png)
-##### 1.3 GooLeNet
-##### 1.4 VGG-Nets  
+`AlexNet`对计算机视觉领域重拾卷积神经网络起到非常大的作用。它是由Alex Krizhevsky，Ilya Sutskever和Geoff Hinton实现，并在
+2012年ImageNet ILSVRC竞赛中夺冠，其性能远传统的模型。（16% 的 top5 错误率，第二名是 26% 的 top5 错误率）。但远观 AlexNet
+其本身没有与之前的LeNet相似，但用了更深更大的网络，通过层叠卷积获取特征。
+##### 1.3 ZFNet
+`ZFNet`是由Matthew Zeiler和Rob Fergus实现，并在 ILSVRC 2013 竞赛中夺冠。其主要通过修改结构中的超参数对 AlexNet 进行修正，
+主要为增加中间卷积层的尺寸，让步长和滤波器更小。
+##### 1.4 GooLeNet
+`GooLeNet`由Google开发者设计，在 ILSVRC 2014 竞赛夺得。其主要贡献在于实现一个奠基模块，显著减少参数数量（60M -> 4M）。
+使用一个平均汇聚，把很多不用的参数给去除掉。
+##### 1.5 VGG-Nets  
 ![img](./../img/VGG16.png)
-##### 1.5 Network-In-Network 
-##### 1.6 ResNet
+`VGGNet` 由Karen Simonyan和 Andrew Zisserman 设计，在ILSVRC 2014 获得第二名。其主要功能主要体验在全局都使用
+`3×3`卷积核，使得体现算法深度层面。
+##### 1.6 Network-In-Network 
+##### 1.7 ResNet
+`ResNet` 由何凯明等实现，在 ILSVRC2015 夺冠。其主要表现在：使用特殊的跳跃链接；大量使用批量归一化。
 
 #### 2. 参数压缩  
 虽然很多领域神经网络都取得出类拔萃的效果，然而其本身的参数数量太多（500MB）且参数运算的次数也较多（309亿浮点操作）才能完成一次
