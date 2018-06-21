@@ -16,4 +16,14 @@ protoc object_detection/protos/*.proto --python_out=.
 
 ```
 
+```
+sudo gedit ~/.bashrc #open bashrc file
+#then add this new line to the end of your bashrc file
+export
+PYTHONPATH=$PYTHONPATH=/home/XXX/tensorflow/models/research:/home/XXX/tensorflow/models/research/slim
+#then restart then bashrc to make it work(You should change XXX for you own path~)
+source ~/.bashrc
+#you can change the path to your own!
+```
+
 更多关于`models`的使用教程参考[这里](https://github.com/tensorflow/models/tree/master/tutorials)
