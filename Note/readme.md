@@ -12,6 +12,7 @@
 * [盘点2017深度学习论文](Niubility/paper2017.md)  
 * [计算机视觉相关论文整合](Niubility/Computer-Version-Paper(updating).md)  
 * [AI 硬件技术发展](AI_hardware_advanced_technology.md)
+* [(已移动到这里)](https://github.com/PeterChenYijie/Weekly_clean_Wechat_favorites)~~每周清空微信收藏部分~~
 
 
 
