@@ -29,7 +29,7 @@ updating...
 |**2.6 深度强化学习**|  
 |深度强化学习综述[中文][2.6.1-zh]|
 |**2.7 深度迁移学习 /终身学习 /一次学习**| 
-|`jindongwang`GitHub|Github|[Github](https://github.com/jindongwang/transferlearning)  
+|迁移学习简明手册[中文][2.7.1-zh]|Github|[Github](https://github.com/jindongwang/transferlearning)  
 |**3 应用**|  
 |**3.1 自然语言处理（NLP）**|  
 |情感分析中的深度学习[中文][3.1.1-zh]|Deep Learning for Sentiment Analysis: A Survey[[pdf]][3.1.1-en]
@@ -51,7 +51,7 @@ updating...
 |**3.8 对象分割**| 
 |图像分割方法综述研究[中文][3.8.1-zh]|  
 |**3.9 GAN**|
-|生成对抗网络综述.[中文][3.9.1-zh]|Generative Adversarial Networks: An Overview [[pdf]][3.9.1-en]|
+|生成对抗网络综述.[中文][3.9.1-zh]|Generative Adversarial Networks: An Overview [[pdf]][3.9.1-en]|[[Github]Gan-zoo][3.9.1-github]  
 |**3.10 细粒度**|
 |基于深度卷积特征的细粒度图像分类研究综述[中文][3.10.1-zh]|
 |**3.11 待分类**|
@@ -67,6 +67,7 @@ updating...
 [2.2.1-zh]:http://blog.csdn.net/heyongluoyao8/article/details/52478715
 [2.4.1-zh]:https://mp.weixin.qq.com/s/Avs25wKrT8CcAThkhoV42A
 [2.6.1-zh]:https://drive.google.com/open?id=1BZHlnl8zFmKYslkURclsfzegmGusPORH
+[2.7.1-zh]:http://jd92.wang/assets/files/transfer_learning_tutorial_wjd.pdf
 [3.1.1-zh]:https://www.jiqizhixin.com/articles/Deep-Learning-for-Sentiment-Analysis
 [3.1.1-en]:https://arxiv.org/ftp/arxiv/papers/1801/1801.07883.pdf
 [3.2.1-zh]:https://drive.google.com/open?id=1BOSOFxRpTCF59OIUtZeLQh9bjZAUeyJr
@@ -87,6 +88,7 @@ updating...
 [3.8.1-zh]:https://drive.google.com/open?id=1I4O5a8HZgGJmgq0qEFtmKv0fZYkXrYdb
 [3.9.1-zh]:https://www.jiqizhixin.com/articles/2017-10-22-4
 [3.9.1-en]:https://arxiv.org/pdf/1710.07035.pdf
+[3.9.1-github]:https://github.com/hindupuravinash/the-gan-zoo
 [3.10.1-zh]:https://drive.google.com/open?id=1qWfew-cwT53OfsIjBPRTRKgNRX9Rr8E7
 [3.11.1-zh]:https://www.jiqizhixin.com/articles/2018-03-05-4
 [3.11.1-en]:https://arxiv.org/pdf/1801.00553.pdf
